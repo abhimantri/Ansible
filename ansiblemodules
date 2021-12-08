@@ -1,0 +1,10 @@
+## To use modules from command line
+ansible all -m ping
+## To ping all the hosts in host inventory
+ansible webservers -m command -a "ls"
+## If we want to flush iptables of allthe hosts present in the inventory with sudo privileges
+ansible -i inventory  all -m command -a "iptables -F" --become --ask-become-pass
+## to gather facts hosts
+ansible all -m setup
+## To extract a particular fact in the documentation of a particular module
+ansilbe-doc setup
