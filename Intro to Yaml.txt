@@ -1,0 +1,10 @@
+Yet Another Markup Language(YAML): Ansible uses Yaml language which is human readable and easily understandable. It has a slightly simple and different notation when compared to JSON or XML.
+Rules of Yaml file:
+- It starts with three dashes (---) and ends with three dots(...)
+- We can use abbreviations to use represent dictionaries
+James: {
+  name: James Kirk,
+  rollNo: 12345,
+  gender: Male,
+  division: B}
+- List : Each item in the list is added in a new line with - followed by space in the same indentation.
